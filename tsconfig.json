@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* הגדרות בסיסיות */
+    "target": "ESNext",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    
+    /* תאימות ונוחות */
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, 
+    
+    /* פתרון בעיות המודולים */
+    "isolatedModules": true,
+    "strict": true, 
+    
+    /* תמיכה ב-Node */
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
