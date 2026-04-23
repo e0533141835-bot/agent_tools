@@ -3,5 +3,5 @@ export interface IManagerSummary {
   strengths: string[];         // רשימת חוזקות (מערך של מחרוזות)
   concerns_or_gaps: string[];  // רשימת חששות או פערי ידע
   manager_tip: string;         // שורת המחץ האופרטיבית למנהל
-  createdAt?: Date;            // תאריך יצירה (אופציונלי, מתווסף ב-DB)
+  createdAt?: Date;          
 }
