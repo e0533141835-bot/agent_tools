@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 import express, { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';
 import employeeRoutes from './routes/employee.routes';
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use('/api/v1', employeeRoutes);
 
 app.use((req: Request, res: Response) => {
+  console.log('⚠️ Someone tried to hit a wrong route:', req.originalUrl);
   res.status(404).json({ success: false, message: 'Route not found' });
 });
 
