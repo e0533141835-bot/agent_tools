@@ -1,5 +1,5 @@
 # 1. מתחילים ממחשב וירטואלי נקי עם Node.js
-FROM node:18-alpine
+FROM node:20-alpine
 
 # 2. מגדירים את תיקיית העבודה
 WORKDIR /app

@@ -28,10 +28,14 @@ const start = async () => {
 
     await connectToDatabase(MONGO_URI, DB_NAME);
     
-    app.listen(PORT, () => {
-      console.log(`🚀 Server is running on http://localhost:${PORT}`);
-      console.log(`📡 API available at http://localhost:${PORT}/api/v1`);
+    // app.listen(PORT, () => {
+    //   console.log(`🚀 Server is running on http://localhost:${PORT}`);
+    //   console.log(`📡 API available at http://localhost:${PORT}/api/v1`);
+    // });
+    app.listen(Number(PORT), '0.0.0.0', () => {
+    console.log(`🚀 Server is running on port ${PORT}`);
     });
+     
   } catch (err) {
     console.error('❌ Startup error:', err);
     process.exit(1);
