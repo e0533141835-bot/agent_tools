@@ -1,7 +1,7 @@
 export interface IManagerSummary {
-  employee_name: string;      // שם העובדת
-  strengths: string[];         // רשימת חוזקות (מערך של מחרוזות)
-  concerns_or_gaps: string[];  // רשימת חששות או פערי ידע
-  manager_tip: string;         // שורת המחץ האופרטיבית למנהל
+  employee_name: string;      
+  strengths: string[];         
+  concerns_or_gaps: string[];  
+  manager_tip: string;        
   createdAt?: Date;          
 }
